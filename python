@@ -1,0 +1,62 @@
+import requests
+import secrets
+import sys as n
+import time
+import time as mm
+def slow(M):
+	for c in M + '\n':
+		n.stdout.write(c)
+		n.stdout.flush()
+		mm.sleep(1. / 120)
+
+req = requests.session()
+print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+slow(""" 
+
+ _         _       _           
+| |__   __| |     | |_ __ ___  
+| '_ \ / _` |     | | '_ ` _ \ 
+| | | | (_| |    _| | | | | | |
+|_| |_|\__,_|___(_)_|_| |_| |_|
+           |_____|             
+
+
+
+""")
+print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━") 
+slow("\nستظهر الان صفحة ويب لحسابي حفاظاً على حقوقي☢️\n  ")
+time.sleep(4)
+import webbrowser
+webbrowser . open('https://instagram.com/hd_.lm?utm_medium=copy_link')
+time.sleep(5)
+print(" ")
+head = {
+'HOST': "www.instagram.com",
+'KeepAlive' : 'True',
+'user-agent' : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36",
+'Cookie': 'cookie',
+'Accept' : "*/*",
+'ContentType' : "application/x-www-form-urlencoded",
+"X-Requested-With" : "XMLHttpRequest",
+"X-IG-App-ID": "936619743392459",
+"X-Instagram-AJAX" : "missing",
+"X-CSRFToken" : "missing",
+"Accept-Language" : "en-US,en;q=0.9"
+}
+cookie = secrets.token_hex(8)*2
+r = requests.Session()
+
+target = input('[+] اكتب يوزر الضحيه : ')
+url_id = f'https://www.instagram.com/{target}/?__a=1'
+req_id = r.get(url_id,headers=head).json()
+bio    = str(req_id['graphql']['user']['biography'])
+url    = str(req_id['graphql']['user']['external_url'])
+nam    = str(req_id['graphql']['user']['full_name'])
+idd    = str(req_id['graphql']['user']['id'])
+isp    = str(req_id['graphql']['user']['is_private'])
+isv    = str(req_id['graphql']['user']['is_verified'])
+pro    = str(req_id['graphql']['user']['profile_pic_url'])
+print("==============================")
+print(f'[-] Name : {nam}\n[-] Id : {idd}\n[-] private : {isp}\n[-] verified : {isv}\n[-] Bio : {bio}\n[-] Profile picture : {pro}')
+print("===============================")
+print("تمت المهمة ✅")
