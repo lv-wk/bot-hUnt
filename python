@@ -11,23 +11,22 @@ def slow(M):
 
 req = requests.session()
 print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-slow(""" 
 
- _         _       _           
-| |__   __| |     | |_ __ ___  
-| '_ \ / _` |     | | '_ ` _ \ 
-| | | | (_| |    _| | | | | | |
-|_| |_|\__,_|___(_)_|_| |_| |_|
-           |_____|             
-
-
+   ____        ______ 
+  / __ \      |____  |
+ | |  | |_      __ / / 
+ | |  | \ \ /\ / / /  
+ | |__| |\ V  V / /   
+  \___\_\ \_/\_/_/    
+                      
+                     
 
 """)
 print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━") 
 slow("\nستظهر الان صفحة ويب لحسابي حفاظاً على حقوقي☢️\n  ")
 time.sleep(4)
 import webbrowser
-webbrowser . open('https://instagram.com/hd_.lm?utm_medium=copy_link')
+webbrowser . open('https://instagram.com/q_bx_?utm_medium=copy_link')
 time.sleep(5)
 print(" ")
 head = {
